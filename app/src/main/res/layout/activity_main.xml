@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Cnt"
+    tools:context="com.treenear.treewebserver.MainActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:background="@drawable/card"
+               android:layout_centerInParent="true"
+               android:layout_toLeftOf="@+id/BtnConnect"
+               android:id="@+id/TvIp"
+               style="@style/text_medium_bold"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <Button
+               android:textColor="@color/white"
+               android:layout_alignParentRight="true"
+               android:layout_centerInParent="true"
+               style="@style/text_small_bold"
+               android:layout_margin="@dimen/text_margin"
+               android:id="@+id/BtnConnect"
+               android:text="Connect"
+               android:background="@drawable/roun_rect_red"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+       <LinearLayout
+           android:layout_margin="@dimen/text_margin"
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <Button
+               android:id="@+id/BtnDefault"
+               android:layout_margin="@dimen/text_margin"
+               android:textColor="@color/white"
+               android:text="@string/btn_add"
+               android:background="@drawable/roun_rect_green"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <Button
+               android:id="@+id/BtnExport"
+               android:layout_margin="@dimen/text_margin"
+               android:textColor="@color/white"
+               android:text="@string/btn_export"
+               android:background="@drawable/roun_rect_gray"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <Button
+               android:id="@+id/BtnImport"
+               android:layout_margin="@dimen/text_margin"
+               android:textColor="@color/white"
+               android:text="@string/btn_import"
+               android:background="@drawable/roun_rect_orange"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <ProgressBar
+               android:id="@+id/PbrLoad"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/TvLoad"
+               android:layout_gravity="center"
+               style="@style/text_medium_bold"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <android.support.v4.widget.SwipeRefreshLayout
+               android:id="@+id/Swp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/RcvData"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+               </android.support.v7.widget.RecyclerView>
+           </android.support.v4.widget.SwipeRefreshLayout>
+
+           <android.support.design.widget.FloatingActionButton
+               android:id="@+id/FabDelete"
+               android:layout_margin="@dimen/text_margin"
+               android:src="@drawable/ic_delete_white_24dp"
+               android:layout_gravity="bottom|right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </FrameLayout>
+
+   </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

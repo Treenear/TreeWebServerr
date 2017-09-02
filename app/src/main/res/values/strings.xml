@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TreeWebServer</string>
+    <string name="message">Kamu Mengakses Android Dari Wifi Conected</string>
+    <string name="dialog_exit_message">Android Web Server saat ini sedang berjalan. Jika Anda keluar dari aplikasi, kami akan menghentikannya. Yakin ingin keluar dari aplikasi?</string>
+    <string name="warning">Warning</string>
+    <string name="wifi_message">Anda harus terhubung ke jaringan WiFi untuk menggunakan layanan ini.</string>
+    <string name="msg_nodata">Belum Ada Data</string>
+    <string name="btn_add">Deafault</string>
+    <string name="btn_export">Export</string>
+    <string name="btn_import">Import</string>
+</resources>

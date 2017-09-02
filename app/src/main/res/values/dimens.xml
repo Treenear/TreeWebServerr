@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_margin">5dp</dimen>
+    <dimen name="text_marginmin_extralarge">-30dp</dimen>
+    <dimen name="text_margin_small">10dp</dimen>
+    <dimen name="text_margin_medium">15dp</dimen>
+    <dimen name="text_margin_large">20dp</dimen>
+    <dimen name="text_margin_extralarge">30dp</dimen>
+    <dimen name="text_margin_appbar">50dp</dimen>
+    <!-- COL HOTELS -->
+    <dimen name="HColHotels">200dp</dimen>
+    <dimen name="HColAtp">300dp</dimen>
+    <dimen name="HWappbarmedium">50dp</dimen>
+    <dimen name="HWappbarmin">30dp</dimen>
+</resources>

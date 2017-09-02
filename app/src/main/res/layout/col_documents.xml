@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/LnrColDocument"
+        android:background="@drawable/card"
+        android:layout_margin="@dimen/text_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ImgColDocument"
+                android:layout_width="@dimen/HWappbarmedium"
+                android:layout_height="@dimen/HWappbarmedium"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/text_margin"
+                android:contentDescription=""
+                tools:ignore="ContentDescription" />
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/ImgColDocument"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/TvColDocName"
+                    style="@style/text_medium_normal" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/TvColDocUser"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/text_margin"
+                        android:background="@drawable/roun_rect_gray"
+                        style="@style/text_small_custom10" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/TvColDocDate"
+                    style="@style/text_small_custom10"
+                    android:layout_gravity="right"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
